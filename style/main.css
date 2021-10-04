@@ -1,0 +1,109 @@
+:root { /* declarar variáveis dentro do CSS*/
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* { /* reset CSS; define novo padrão */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* não ultrapassar borda da caixa */
+}
+
+/* Base */
+body {
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex; /* flex box para alinhar elementos em tela */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover { /* mudar de cor quando mouse passa */
+    color: #fff;
+}
+
+/* Filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/img/viuva-negra-poster.jpg");
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.filme-principal .titulo {
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color:rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 20px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 10px;
+}
+
+.container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-film {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies {
+    margin-top: 5px;
+}
